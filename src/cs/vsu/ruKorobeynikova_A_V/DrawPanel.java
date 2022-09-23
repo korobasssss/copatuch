@@ -24,7 +24,10 @@ public class DrawPanel extends JPanel {
         DrawCopatuch drawCopatuch = new DrawCopatuch();
         drawCopatuch.draw(g2, getWidth(), getHeight());
 
-
+        //добавляем слова
+        g2.setColor(Color.BLACK);
+        g2.setFont(g.getFont().deriveFont(50f));
+        g2.drawString("психопатыч", 100, 200);
     }
 }
 
