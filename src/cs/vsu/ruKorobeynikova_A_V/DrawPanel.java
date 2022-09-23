@@ -2,6 +2,7 @@ package cs.vsu.ruKorobeynikova_A_V;
 
 import cs.vsu.ruKorobeynikova_A_V.backGround.DrawBackGround;
 import cs.vsu.ruKorobeynikova_A_V.foreGround.DrawCopatuch;
+import cs.vsu.ruKorobeynikova_A_V.foreGround.DrawDownThingAndHandWithAxe;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,9 +16,15 @@ public class DrawPanel extends JPanel {
         //рисуем задний фон
         DrawBackGround.drawShadow(g2, getWidth(), getHeight());
 
+        //рисуем нижнюю непонятную штуку и руку с топором
+        DrawDownThingAndHandWithAxe dr = new DrawDownThingAndHandWithAxe();
+        dr.draw(g2, getWidth(), getHeight());
+
         //рисуем копатыча
         DrawCopatuch drawCopatuch = new DrawCopatuch();
         drawCopatuch.draw(g2, getWidth(), getHeight());
+
+
     }
 }
 

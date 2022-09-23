@@ -9,7 +9,6 @@ public class DrawCopatuch {
     Color c = new Color(171, 141, 117);
 
     private void drawBodyAndEars(Graphics2D g2, int width, int height) {
-        g2.setStroke(new BasicStroke(5F));
         g2.setColor(c);
         //уши
         AffineTransform old = g2.getTransform();
